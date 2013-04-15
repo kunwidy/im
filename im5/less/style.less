@@ -1,0 +1,209 @@
+//INDONESIA MENDENGAR REVISI APRIL 2013
+
+/* bootstrap core ----------------- */
+@import "bootstrap.less";
+//@import "bootstrap-responsive.less";
+
+/* bootstrap plugins -------------- */
+@import "prettify.less";
+@import "font-awesome.min.less";
+@import "datepicker.less";
+@import "sequencejs-theme.apple-style";
+@import "jquery.bxslider.less";
+
+/* styling per page -------------- */
+@import "home-page.less";
+@import "page-radio.less";
+@import "page-profil.less";
+@import "page-kompetisi.less";
+@import "page-galeri.less";
+
+/*Font style----------------------*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|Ropa+Sans|Roboto+Condensed);
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'Ropa Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+//GLOBAL STYLE
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #525354;
+    background: url(../img/bg.gif);
+    }
+    
+     //FONT COLOR
+    @dark: #222222;
+    @white: #fff;
+    @red: #DD1212;
+    @red-light: #ED1717;
+    @grey-light: #E8E9E9;
+    @grey: #ddd;
+    
+    .text-title{
+            color: @red;
+            text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.91);
+        }
+        .text-red{
+            color: @red;
+        }
+         .text-white{
+            color: @white;
+        }
+    .dark{
+        color: @dark;
+        }
+    .white{
+        color: @white;
+        }
+    .text-bg{
+        background: @grey;
+        }
+    .grey-bg{
+        background: @grey-light;
+        }
+    .red-bg{
+        background: #f85032; /* Old browsers */
+        background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f85032), color-stop(50%,#f16f5c), color-stop(51%,#f6290c), color-stop(71%,#f02f17), color-stop(100%,#e73827)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+        
+        }
+    .bg-round{
+        padding: 5px;
+        border-bottom: 1px solid #ddd;
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+        }
+    
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    
+    a{
+        color: @red;
+        }
+    a:hover{
+        color: @red-light;
+        text-decoration: none;
+        }
+        
+    ol, ul {
+  list-style: none;
+    }
+   
+   
+ //CUSTOM BOOTSTRAP //cutom bootsrap
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 0;
+  border-right: none;
+
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+    font-size: 18px;
+    background: #F1F1F1;
+     color: #A11717;
+     
+      -moz-border-radius-topleft: 20px;
+-webkit-border-top-left-radius: 20px;
+ border-top-left-radius: 20px;
+-moz-border-radius-bottomleft: 20px;
+-webkit-border-bottom-left-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+
+.tabs-left > .nav-tabs :hover{
+  
+    
+    }
+
+.tab-content {
+  display: block;
+  padding: 10px;
+  margin: 0;
+}
+.nav-pills{
+    padding-left: 10px;
+    }
+.large {
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+   background: #F1F1F1;
+}   
+
+.custom-nav{
+   
+    padding: 5px;
+    margin-bottom: -5px;
+    background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+  
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.nav-pills > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+          color: #fff;
+
+}
+.nav-pills > li > a:hover {
+     background-color: #C70A0A;
+    }
+    
+    .nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: #ffffff;
+  background-color: #A11717;
+}
+       
+.tab-content{
+    margin:0;
+    }        
+        
+    
+    
+    
+    
+    
+    

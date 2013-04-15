@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>IM|PROFIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+  
+	<link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="mediaelement/build/mediaelementplayer.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui-1.7.2.custom.css" />
+	<link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css">
+		<link rel="stylesheet" href="css/website.css" type="text/css" media="screen"/>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+	<style type="text/css" id="holderjs-style">.holderjs-fluid 	{font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+	</style>
+	
+</head>
+
+  <body>
+  
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+			<div class="logo">
+				 <a href="http://medidu.com/im5/index.html"><img src="img/logo.png" alt="#"></a>
+			</div>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="http://medidu.com/im5"><i class="icon-home"></i> Home</a></li>
+              <li><a href="http://medidu.com/im5/kompetisi.html"> <i class="icon-trophy"></i> Kompetisi</a></li>
+              <li><a href="http://medidu.com/im5/radio.html"><i class="icon-credit-card"></i> Radio</a></li>
+              <li><a href="http://medidu.com/im5/interaktif.html"><i class="icon-dashboard"></i> Interaktif</a></li>
+			  <li><a href="http://medidu.com/im5/galeri.html"><i class="icon-camera"></i> Galeri</a></li>
+			  <li>
+				<form class="navbar-search pull-left">
+					<input type="text" class="search-query" placeholder="Cari">
+					</form>
+			  </li>
+            </ul>
+           <div class="pull-right">
+                <ul class="nav pull-right">
+                  	<li class="divider-vertical"></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon-headphones"></i> Login<strong class="caret"></strong></a>
+						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+							<form method="post" action="login" accept-charset="UTF-8">
+								<input style="margin-bottom: 15px;" type="text" placeholder="Nama user" id="username" name="username">
+								<input style="margin-bottom: 15px;" type="password" placeholder="Sandi" id="password" name="password">
+								<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+								<label class="string optional" for="user_remember_me"> ingatkan sandi</label>
+								<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Masuk">
+							</form>
+						</div>
+					</li>
+				</ul>
+            </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	
+	
+	<div class="container">
+		<div class="profile-big-banner">
+			<div class="row profil-box">
+				<div class="span3">
+					
+					<div class="profile-photo">	
+						<img class="profile-big-thumbs" src="upload/user.jpg">
+					</div>
+					
+				</div>
+				<div class="span9">
+					<div class="profile-name-box">
+						<h1 class="profile-name">Sigit Sedayu<h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- BIG CONTENT -->
+	<div class="container">
+		<div class="row">
+			<div class="stats">
+				<div class="span7 offset3">
+					<h3 class="dark"><i class="icon-thumbs-up icon-large"></i> 5000 &nbsp; <i class="icon-heart icon-large"></i> 7000 </h3>
+				</div>
+			
+				<div class="pull-right">
+					<br/>
+					<a class="btn btn-primary"><i class="icon-tag"></i> mengikuti</a>
+				</div>
+			</div>
+			
+			<div class="span12">
+				<br/>
+				<div class="tabbable tabs-left ">
+			
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab"><i class="icon-comments icon-large"></i> &nbsp; Feed</a></li>
+						<li><a href="#tab2" data-toggle="tab"><i class="icon-user icon-large"></i> &nbsp; Profile</a></li>
+						<li><a href="#tab3" data-toggle="tab"><i class="icon-music icon-large"></i> &nbsp; Suara</a></li>
+						<li><a href="#tab4" data-toggle="tab"><i class="icon-picture icon-large"></i> &nbsp; Galeri</a></li>
+						<li><a href="#tab5" data-toggle="tab"><i class="icon-tag icon-large"></i> &nbsp; Mengikuti</a></li>
+						<li><a href="#tab6" data-toggle="tab"><i class="icon-tags icon-large"></i> &nbsp; Diikuti</a></li>
+					</ul>
+					
+					 
+					<div class="tab-content large">
+						
+					    <div class="tab-pane" id="tab1">
+							
+							
+						<!-- tabs 1 feed-->
+						 <div class="feedbox">
+							<div id="scrollbar1">
+							 <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+							  <div class="viewport">
+								<div class="overview">
+								 <ul class="feed-list">
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"> <i class="icon-user"></i> Kristiono Setiadi</a></h5>
+													<p class="status"><small><i class="icon-quote-left"></i> Menyukai suara separuh aku.</small></p>
+												</div>
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user-default.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ardiansyah</a></h5>
+													<p class="status"><small><i class="icon-quote-left"></i> Telah berhasil menamai suaranya menjadi separuh aku, <a href="#">dengarkan suara</a>.</small></p>
+												</div>
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>
+									<li>
+										<a href="#"><img class="mini-thumbs" src="upload/user.jpg" alt=""></a>
+										<div class="stream-text">
+											<div class="row">
+												<div class="span7">
+													<h5 class="name-status"><a href="#"><i class="icon-user"></i> Ujang Ekok</a></h5>
+													<p class="status"><small> <i class="icon-quote-left"></i> Menyukai suara <a href="#">Cinta</a>.</small></p>
+												</div>
+												
+											</div>
+										</div>	
+									</li>	
+								 </ul>
+							    </div>
+							  </div>
+							 </div>
+							</div>
+							
+						</div>
+					
+						<!-- tabs 2 profile-->
+						<div class="tab-pane" id="tab2">
+							<div class="profile-data"> 
+								<div class="row">
+									<div class="span6 offset2 profile-biodata">
+										
+										<table class="table hover">
+											 
+											<tr>
+												<td><i class="icon-user"></i> &nbsp; Nama</td>
+												<td>:</td>
+												<td>Sigit Sedayu</td>
+											</tr>
+											<tr>
+												<td><i class="icon-calendar"></i> &nbsp; Tanggal Lahir</td>
+												<td>:</td>
+												<td>1 Juli 1986 (26 tahun)</td>
+											</tr>
+											<tr>
+												<td><i class="icon-map-marker"></i> &nbsp; Lokasi Asal</td>
+												<td>:</td>
+												<td>Bandung</td>
+											</tr>
+											<tr>
+												<td><i class="icon-music"></i> &nbsp; Jenre Musik</td>
+												<td>:</td>
+												<td>RnB, Jazz, Pop Melayu</td>
+											</tr>
+											<tr>
+												<td><i class="icon-lightbulb"></i> &nbsp; Profesi</td>
+												<td>:</td>
+												<td>Penulis Lagu, Penyanyi</td>
+											</tr>
+											<tr>
+												<td><i class="icon-magic"></i> &nbsp; Instrument</td>
+												<td>:</td>
+												<td>Gitar</td>
+											</tr>
+											<tr>
+												<td><i class="icon-flag"></i> &nbsp; Aktif</td>
+												<td>:</td>
+												<td>Februari 2003</td>
+											</tr>
+										</table>
+
+										<div class="pull-right">
+											<a class="btn btn-primary btn-mini" href="#">edit profil</a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					
+						<!-- tabs 3 daftar Suara-->
+						<div class="tab-pane active" id="tab3">
+							<div id="scrollbar2">
+							  <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+								<div class="viewport">
+									<div class="overview">
+												<ul class="list-insert ">
+													<li class="">
+														<div class="media">
+															<p class="text-white">
+																<i class="icon-music"></i> X879GYT78 
+																<span class="pull-right">
+																	<a class="btn btn-mini" href="#"><i class="icon-thumbs-up"></i> &nbsp; 200</a>
+																	<a class="btn btn-mini" href="#"><i class="icon-heart"></i> &nbsp; 300</a>
+																</span>
+															</p>
+															<audio id="player1" width="700" src="mediaelement/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls">
+															</audio>
+															
+														</div>
+													</li>
+													<li class="">
+														<div class="media">
+															<p class="text-white">
+																<i class="icon-music"></i> X879GYT77 
+																<span class="pull-right">
+																	<a class="btn btn-mini" href="#"><i class="icon-thumbs-up"></i> &nbsp; 200</a>
+																	<a class="btn btn-mini" href="#"><i class="icon-heart"></i> &nbsp; 300</a>
+																</span>
+															</p>
+															<audio id="player2" width="700" src="mediaelement/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls">
+															</audio>
+															
+														</div>
+													</li>
+													<li class="">
+														<div class="media">
+															<p class="text-white">
+																<i class="icon-music"></i> X879GYT76
+																<span class="pull-right">
+																	<a class="btn btn-mini" href="#"><i class="icon-thumbs-up"></i> &nbsp; 200</a>
+																	<a class="btn btn-mini" href="#"><i class="icon-heart"></i> &nbsp; 300</a>
+																</span>
+															</p>
+															<audio id="player3" width="700" src="mediaelement/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls">
+															</audio>
+															
+														</div>
+													</li>
+													<li class="">
+														<div class="media">
+															<p class="text-white">
+																<i class="icon-music"></i> X879GYT75
+																<span class="pull-right">
+																	<a class="btn btn-mini" href="#"><i class="icon-thumbs-up"></i> &nbsp; 200</a>
+																	<a class="btn btn-mini" href="#"><i class="icon-heart"></i> &nbsp; 300</a>
+																</span>
+															</p>
+															<audio id="player4" width="700" src="mediaelement/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls">
+															</audio>
+															
+														</div>
+													</li>
+													<li class="">
+														<div class="media">
+															<p class="text-white">
+																<i class="icon-music"></i> X879GYT74 , <a href="#">rubah</a>
+																<span class="pull-right">
+																	<a class="btn btn-mini" href="#"><i class="icon-thumbs-up"></i> &nbsp; 200</a>
+																	<a class="btn btn-mini" href="#"><i class="icon-heart"></i> &nbsp; 300</a>
+																</span>
+															</p>
+															<audio id="player1" width="700" src="mediaelement/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls">
+															</audio>
+															
+														</div>
+													</li>
+													<li class="">
+														<div class="media">
+															<p class="text-white">
+																<i class="icon-music"></i> X879GYT74 , <a href="#">rubah</a>
+																<span class="pull-right">
+																	<a class="btn btn-mini" href="#"><i class="icon-thumbs-up"></i> &nbsp; 200</a>
+																	<a class="btn btn-mini" href="#"><i class="icon-heart"></i> &nbsp; 300</a>
+																</span>
+															</p>
+															<audio id="player1" width="700" src="mediaelement/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls">
+															</audio>
+															
+														</div>
+													</li>
+													<li class="">
+														<div class="media">
+															<p class="text-white">
+																<i class="icon-music"></i> X879GYT74 , <a href="#">rubah</a>
+																<span class="pull-right">
+																	<a class="btn btn-mini" href="#"><i class="icon-thumbs-up"></i> &nbsp; 200</a>
+																	<a class="btn btn-mini" href="#"><i class="icon-heart"></i> &nbsp; 300</a>
+																</span>
+															</p>
+															<audio id="player1" width="700" src="mediaelement/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls">
+															</audio>
+															
+														</div>
+													</li>
+												</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<!-- tabs 4 Galeri-->
+						<div class="tab-pane active" id="tab4">
+						  <div class="galeri"> 
+						  
+							<div class="foto">
+								
+								<ul class="bxslider1">
+									<!-- list Galeri halaman 1-->
+									<li>
+										<h3 class="text-center dark"> <i class="icon-picture"></i> Foto - Foto</h3>
+										<ul class="thumbnails fotofoto">
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/3.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/3.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2">
+												<a title="upload/berita2.jpg" rel="prettyPhoto" class="photo-show thumbnail" href=".myModal" data-toggle="modal"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+										</ul>
+										
+									</li>
+									<!-- /list Galeri halaman 1-->
+									
+									<!-- list Galeri halaman 2-->
+									<li>
+										<h3 class="text-center dark"><i class="icon-picture"></i> Foto - Foto</h3>
+										<ul class="thumbnails fotofoto">
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+											<li class="span2"><a href="#" class="thumbnail"><img src="upload/berita2.jpg" alt=""></a>
+											</li>
+										</ul>
+										
+									</li>
+									<!-- /list Galeri halaman 2-->
+									
+									
+								</ul>
+							</div>
+							
+							<div class="live-video">
+							  <ul class="bxslider2">
+								<li>
+									<h3 class="text-center dark"><i class="icon-facetime-video"></i> Live</h3>
+									<div class="gal-video">
+										<video src="mediaelement/media/echo-hereweare.ogv" width="710" height="340"></video>
+									</div>
+									<h4 class="text-center">NOAH "Ada Apa Dengan mu"</h4>
+								
+								</li>
+								<li>
+									<h3 class="text-center"><i class="icon-facetime-video"></i> Live</h3>
+									<div class="gal-video">
+										<video src="mediaelement/media/echo-hereweare.mp4" width="710" height="340"></video>
+									</div>
+									<h4 class="text-center">The Rock "Munajat Cinta"</h4>
+								</li>
+							  </ul>
+							</div>
+							
+							<div class="behind-video">
+							  <ul class="bxslider3">
+								<li>
+									<h3 class="text-center dark"><i class="icon-film"></i> Dibalik Layar</h3>
+									<div class="gal-video">
+										<video src="mediaelement/media/echo-hereweare.mp4" width="710" height="340"></video>
+									</div>
+									<h4 class="text-center">Aktifitas Masa Pemilihan</h4>
+								
+								</li>
+								<li>
+									<h3 class="text-center dark"><i class="icon-film"></i> Dibalik Layar</h3>
+									<div class="gal-video">
+										<video src="mediaelement/media/echo-hereweare.mp4" width="710" height="340"></video>
+									</div>
+									<h4 class="text-center">Dibalik Show Spentakuler Indonesia Mendengar</h4>
+								</li>
+							  </ul>
+							</div>
+							
+						  </div>
+						</div> 
+							
+						<!-- tabs 4 following-->
+						<div class="tab-pane" id="tab5">
+							<div class="mengikuti">
+								<h3 class="text-center dark"> <i class="icon-star-empty icon-big"></i> 35 Orang yang mengikuti Sigit</h3>
+								<div class="following-user">
+								  <ul class="thumbnails peserta">
+						
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Dani</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Abah</p>
+										</a>
+									</li>
+						
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Usman</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Sigit</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Poetri</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Cesi</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Sigit sedayu</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Poetri</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Cesi</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Sigit</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Poetri</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Cesi</p>
+										</a>
+									</li>
+								  </ul>
+								</div>
+							</div>		
+						</div>
+						
+						<!-- tabs 5 follower-->
+						<div class="tab-pane" id="tab6">
+							<div class="diikuti">
+								<h3 class="text-center dark"> <i class="icon-star icon-big"></i> Sigit mengikuti 10 Orang</h3>
+								<div class="follower-user">
+								  <ul class="thumbnails peserta">
+						
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Dani</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Abah</p>
+										</a>
+									</li>
+						
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Usman</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Sigit</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Poetri</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Cesi</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Sigit sedayu</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Poetri</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Cesi</p>
+										</a>
+									</li>
+									<li class="span1">
+										<a href="#" class="thumbnail">
+										<img src="upload/user.jpg" alt="">
+										<p class="text-center team-name">Cesi</p>
+										</a>
+									</li>
+								  </ul>
+								</div>
+							</div>		
+						</div>
+					
+					</div>
+					
+				
+				</div>
+			</div>
+		</div>
+	</div>
+      
+	<!-- /END THE FEATURETTES -->
+
+	
+	<div class="footer-wraper">
+	<div class="container">
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2013 Indonesia Mendengar. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+	</div>
+	
+	<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#scrollbar1').tinyscrollbar();	
+			$('#scrollbar2').tinyscrollbar();	
+		});
+	</script>	
+    <script src="js/bootstrap.js"></script>
+	<script src="js/prettify.js"></script>
+	
+	
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="mediaelement/build/mediaelement-and-player.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script src="prettyPhoto/js/jquery.prettyPhoto.js"></script>
+	
+	
+	<script>
+	
+	//media element
+	$('audio,video').mediaelementplayer();
+	
+		
+
+	$(window).load(function(){
+		$(".photo-show").live('click',function(){
+			var ini=$(this);
+			$(".modal-body p").html("<img class='detail-image' src='"+ini.attr('title')+"'>");
+			return false;
+		});
+		//daftar favorit
+		$('.bxslider1').bxSlider();
+		$('.bxslider2').bxSlider();
+		$('.bxslider3').bxSlider();
+//		$('.bxslider4').bxSlider();
+
+	
+	});
+	
+
+	
+		
+		
+				
+		
+		
+	</script>
+<div  class="myModal modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+</body></html>
